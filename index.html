@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faynander's Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,800;1,100;1,200;1,300;1,40 border border-1 border-neutral-600 shadow-lg0;1,500;1,600;1,700;1,800;1,800&display=swap" rel="sty border border-1 border-neutral-600 shadow-lglesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Projet Faynander's Lab" />
+    <meta name="description" content="Bienvenue sur le site officiel du projet de Faynander's Lab ! Retrouvez nos actualitées, nos vidéos mais aussi nos forums regroupées sur notre site." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://faynanderslab.vercel.app" />
+    <meta property="og:title" content="Projet Faynander's Lab" />
+    <meta property="og:description" content="Bienvenue sur le site officiel du projet de Faynander's Lab ! Retrouvez nos actualitées, nos vidéos mais aussi nos forums regroupées sur notre site." />
+    <meta property="og:image" content="src/logo.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://faynanderslab.vercel.app" />
+    <meta property="twitter:title" content="Projet Faynander's Lab" />
+    <meta property="twitter:description" content="Bienvenue sur le site officiel du projet de Faynander's Lab ! Retrouvez nos actualitées, nos vidéos mais aussi nos forums regroupées sur notre site." />
+    <meta property="twitter:image" content="src/logo.png" />
+
+    <!-- Police d'écriture -->
+    <style>
+      * {
+        font-family: "Fira Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-900">
+    <div class="flex h-screen flex-col overflow-y-scroll snap-y snap-mandatory">
+      <nav class="m-5 rounded-xl bg-neutral-800 p-4 shadow-xl max-lg:hidden">
+        <div class="flex items-center justify-between">
+          <!-- Titre de la navbar -->
+          <a href="#" class="text-xl font-bold text-neutral-300">Faynander's Lab</a>
+
+          <!-- Liens de la navbar -->
+          <ul class="flex space-x-8">
+            <li>
+              <a href="#" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white">Accueil</a>
+            </li>
+            <li>
+              <a href="#" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white">À Propos</a>
+            </li>
+            <li>
+              <a href="#" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white">Services</a>
+            </li>
+            <li>
+              <a href="#" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="h-screen grid-cols-2 grid-rows-2 gap-5 lg:m-5 lg:grid snap-start">
+        <div id="section1" class="bg-neutral-800 p-3 text-white shadow-xl max-lg:h-screen lg:rounded-3xl">
+          <div class="border-1 relative left-5 w-fit rounded-full border border-neutral-600 bg-neutral-800 p-2 px-5 shadow-lg lg:-top-7">actualitées</div>
+          <div class="relative mt-3 h-full pb-12 lg:-mt-5 lg:pb-5">
+            <div class="grid h-full gap-0 lg:grid-cols-4">
+              <div class="p-2 max-lg:row-span-2 lg:col-span-3">
+                <h1 class="text-3xl">Titre de l'article</h1>
+                <p>Déscription de l'article</p>
+              </div>
+              <div class="grid max-lg:grid-cols-3 lg:grid-rows-3">
+                <div class="m-1 rounded-lg bg-neutral-700 p-1 shadow-lg max-md:hidden">Article 1</div>
+                <div class="m-1 rounded-lg bg-neutral-700 p-1 shadow-lg max-md:hidden">Article 2</div>
+                <div class="m-1 rounded-lg bg-neutral-700 p-1 shadow-lg max-md:hidden">Article 3</div>
+                <div class="col-span-3 m-1 rounded-lg bg-neutral-700 p-5 shadow-lg md:hidden md:p-1">Article 1 (caroussel)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="section2" class="col-start-1 row-start-2 bg-neutral-800 p-3 text-white shadow-xl max-lg:h-screen lg:rounded-3xl snap-start">
+          <div class="border-1 z-1 relative left-5 w-fit rounded-full border border-neutral-600 bg-neutral-800 p-2 px-5 shadow-lg lg:-top-7">Vidéos et lives</div>
+          <div class="relative mt-3 h-full pb-12 lg:-mt-5 lg:pb-5">Contenu</div>
+        </div>
+        <div id="section3" class="col-start-2 row-span-2 row-start-1 bg-neutral-800 p-3 text-white shadow-xl max-lg:h-screen lg:rounded-3xl snap-start">
+          <div class="flex space-x-2">
+            <div class="border-1 relative left-5 w-fit rounded-full border border-neutral-600 bg-neutral-800 p-2 px-5 shadow-lg lg:-top-7">Forum</div>
+            <div class="border-1 relative left-5 w-fit rounded-full border border-neutral-600 bg-neutral-800 p-2 shadow-lg lg:-top-7">
+              &nbsp
+              <button>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+              &nbsp
+            </div>
+          </div>
+          <div class="relative mt-3 h-fit lg:-mt-5 lg:pb-5">contenu</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
