@@ -55,18 +55,20 @@
     <script>
       var actualTab = 'accueil'
       function switchTab(tab){
-        document.getElementById(tab).classList.remove("hidden");
-        document.getElementById(tab).classList.add("lg:grid");
-        document.getElementById(actualTab).classList.remove("lg:grid");
-        document.getElementById(actualTab).classList.add("hidden");
+        if(actualTab != tab){
+          document.getElementById(tab).classList.remove("hidden");
+          document.getElementById(tab).classList.add("lg:grid");
+          document.getElementById(actualTab).classList.remove("lg:grid");
+          document.getElementById(actualTab).classList.add("hidden");
 
-        navTab = "nav" + tab ;
-        navActualTab = "nav" + actualTab;
+          navTab = "nav" + tab ;
+          navActualTab = "nav" + actualTab;
 
-        document.getElementById(navTab).classList.add("underline");
-        document.getElementById(navActualTab).classList.remove("underline");
+          document.getElementById(navTab).classList.add("underline");
+          document.getElementById(navActualTab).classList.remove("underline");
 
-        actualTab = tab;
+          actualTab = tab;
+        }
       }
     </script>
   </head>
