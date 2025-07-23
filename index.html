@@ -59,6 +59,13 @@
         document.getElementById(tab).classList.add("lg:grid");
         document.getElementById(actualTab).classList.remove("lg:grid");
         document.getElementById(actualTab).classList.add("hidden");
+
+        navTab = "nav" + tab ;
+        navActualTab = "nav" + actualTab;
+
+        document.getElementById(navTab).classList.add("underline");
+        document.getElementById(navActualTab).classList.remove("underline");
+
         actualTab = tab;
       }
     </script>
@@ -70,16 +77,16 @@
           <a href="#" class="text-xl font-bold text-neutral-300">Faynander's Lab</a>
           <ul class="flex space-x-8">
             <li>
-              <a onclick="switchTab('accueil')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">Accueil</a>
+              <a id="navaccueil" onclick="switchTab('accueil')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer underline">Accueil</a>
             </li>
             <li>
-              <a onclick="switchTab('apropos')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">À Propos</a>
+              <a id="navapropos" onclick="switchTab('apropos')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">À Propos</a>
             </li>
             <li>
-              <a onclick="switchTab('services')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">Services</a>
+              <a id="navservices" onclick="switchTab('services')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">Services</a>
             </li>
             <li>
-              <a onclick="switchTab('contact')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">Contact</a>
+              <a id="navcontact" onclick="switchTab('contact')" class="text-neutral-300 transition-all duration-150 ease-in-out hover:text-white cursor-pointer">Contact</a>
             </li>
           </ul>
         </div>
