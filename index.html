@@ -15,7 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
-<!-- Ajouter des animations entre chaque page pour pc, faire la page Services puis au moins intégrer vidéos et live. Une fois tout ça fait, faire les actualités pour les events puis mettre un panneau prochainement pour le forum puisque faut attaquer sur ça après avoir fini le site.-->
+<!--Faire la page Services puis au moins intégrer vidéos et live. Une fois tout ça fait, faire les actualités pour les events puis mettre un panneau prochainement pour le forum puisque faut attaquer sur ça après avoir fini le site.-->
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -309,7 +309,46 @@
       </section>
 
       <section id="services" class="h-svh snap-start hidden transition-all lg:opacity-0 duration-300">
-        To-Do : Mettre les services (GwantX, Forums...)
+        <div
+          class="grid-flow-col grid grid-rows-2 lg:flex lg:items-center lg:justify-center h-full text-center text-neutral-300 lg:px-4 lg:mx-25 text-3xl"
+        >
+          <button
+            onclick="window.location.href='https://discord.gg/swAWMn5nVg'"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
+          >
+            <img
+          src="src/gwantx.svg"
+          alt="Logo de notre projet GwantX"
+          class="w-full h-full"/>
+          </button>
+          <button
+            onclick="window.location.href='https://oscarsleague.vercel.app'"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
+          >
+            <img
+          src="src/gwantx.svg"
+          alt="Logo de notre projet Oscar's League"
+          class="w-full h-full"/>
+          </button>
+          <button
+            onclick="window.location.href=''"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
+          >
+            <img
+          src="src/gwantx.svg"
+          alt="à venir!"
+          class="w-full h-full"/>
+          </button>
+          <button
+            onclick="window.location.href=''"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
+          >
+            <img
+          src="src/gwantx.svg"
+          alt="à venir !"
+          class="w-full h-full"/>
+          </button>
+        </div>
       </section>
 
       <section id="contact" class="h-svh snap-start hidden transition-all lg:opacity-0 duration-300">
@@ -318,7 +357,7 @@
         >
           <button
             onclick="window.location.href='https://discord.gg/39NN3WsXTs'"
-            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
           >
             <img
           src="src/discord.svg"
@@ -326,7 +365,7 @@
           </button>
           <button
             onclick="window.location.href='https://github.com/Atrevix/faynanderslab'"
-            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
           >
           <img
           src="src/github.svg"
@@ -334,7 +373,7 @@
           </button>
           <button
             onclick="window.location.href='https://t.me/faynanderslab'"
-            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
           >
           <img
           src="src/telegram.svg"
@@ -342,7 +381,7 @@
           </button>
           <button
             onclick="window.location.href='https://www.youtube.com/@FaynandersLab/'"
-            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5"
+            class="border-1 rounded-3xl border border-neutral-600 bg-neutral-800 p-5 shadow-lg cursor-pointer m-2 lg:m-5 transition-all hover:scale-110"
           >
             <img
           src="src/youtube.svg"
@@ -364,7 +403,7 @@
     <div
       id="menu"
       popover
-      class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-800 text-white transition-all size-[100vh] opacity-0"
+      class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-800 text-white transition-all size-[100vh] opacity-0 duration-300"
     >
       <div class="flex items-center justify-center m-auto h-full">
         <ul class="">
